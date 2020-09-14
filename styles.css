@@ -1,9 +1,13 @@
-.body {
+.wrap {
   max-width: 600px;
-
-  border: 1px solid gray;
+  margin: 30px auto;
+  padding: 20px;
+}
+.body {
+  border: 1px solid #8194ad;
   display: block;
   background-image: url("backgroundPhoto.jpeg");
+  border-radius: 5px;
 }
 .searchEngine {
   text-align: center;
@@ -24,21 +28,30 @@
   border-radius: 10px;
   width: 100px;
 }
-#localButton {
-  margin: 0px 10px 0px 0px;
-}
+
 p {
   text-align: center;
+  margin: 0px;
+  font-size: 20px;
 }
 h1 {
   text-align: center;
+  font-size: 30;
+  margin: 0px;
 }
-h2 {
+strong {
+  font-size: 35px;
+}
+.float-left {
   text-align: center;
+  margin-left: 85px;
 }
-a {
-  font-size: 25px;
+span {
+  position: relative;
+  top: -12px;
+  font-size: 20px;
 }
+
 li {
   list-style: none;
   margin: 0px 50px;
@@ -46,4 +59,9 @@ li {
 }
 ul {
   padding: 12px 0px 0px 20px;
+}
+#author {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 10px;
 }

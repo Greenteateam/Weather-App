@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather</title>
+    <title>Weather App</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -11,54 +11,53 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-    ;
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="styles.css" />
-    <div class="body">
-      <div class="searchEngine">
-        <form>
-          <input
-            type="text"
-            id="searchEngine"
-            placeholder="Search for a town or city"
-            autofocus="off"
-          />
-          <button
-            type="button"
-            class="btn btn-primary"
-            value="Search"
-            id="searchButton"
-          >
-            Search
-          </button>
-        </form>
-      </div>
-      <p id="date">Monday,14 Sep</p>
-      <p id="time">21:11</p>
+    <div class="wrap">
+      <div class="body">
+        <div class="searchEngine">
+          <form>
+            <input
+              type="text"
+              id="searchEngine"
+              placeholder="Search for a town or city"
+              autofocus="off"
+              autocomplete="off"
+            />
+            <button
+              type="button"
+              class="btn btn-primary"
+              value="Search"
+              id="searchButton"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <p id="date">Monday,14 Sep</p>
+        <p id="time">21:11</p>
 
-      <div class="row">
-        <div class="col-6">
-          <h1 id="city">London</h1>
-          <h2 id="temp">
-            15 <a href="#" id="celsius-link">°C </a> |
-            <a href="#" id="fahrenheit-link"> °F</a>
-          </h2>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li id="humid">Humidity</li>
-            <li id="wind">Wind speed</li>
-          </ul>
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city">London</h1>
+            <div class="float-left">
+              <strong>15</strong>
+              <span class="units"
+                ><a href="#" id="celsius-link">°C </a> |
+                <a href="#" id="fahrenheit-link"> °F</a>
+              </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="humid">Humidity</li>
+              <li id="wind">Wind speed</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <p>Coded by Alicja Jemielita</p>
+      <p id="author">Coded by Alicja Jemielita</p>
     </div>
   </body>
 </html>
