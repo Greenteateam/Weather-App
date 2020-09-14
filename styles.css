@@ -1,5 +1,6 @@
 .body {
   max-width: 600px;
+
   border: 1px solid gray;
   display: block;
   background-image: url("backgroundPhoto.jpeg");
@@ -22,16 +23,21 @@
   border: 1px solid gray;
   border-radius: 10px;
   width: 100px;
-  background-color: #ffffff;
 }
 #localButton {
   margin: 0px 10px 0px 0px;
+}
+p {
+  text-align: center;
 }
 h1 {
   text-align: center;
 }
 h2 {
   text-align: center;
+}
+a {
+  font-size: 25px;
 }
 li {
   list-style: none;
